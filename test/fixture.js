@@ -28,13 +28,6 @@ tree = {
           "type": "directory",
           "children": [
             {
-              "path": "test/test_data/some_dir/another_dir/file_a.txt",
-              "name": "file_a.txt",
-              "size": 12,
-              "type": "file",
-              "extension": ".txt"
-            },
-            {
               "path": "test/test_data/some_dir/another_dir/file_b.txt",
               "name": "file_b.txt",
               "size": 3756,
@@ -42,7 +35,7 @@ tree = {
               "extension": ".txt"
             }
           ],
-          "size": 3768
+          "size": 3756
         },
         {
           "path": "test/test_data/some_dir/file_a.txt",
@@ -59,7 +52,7 @@ tree = {
           "extension": ".txt"
         }
       ],
-      "size": 7536
+      "size": 7524
     },
     {
       "path": "test/test_data/some_dir_2",
@@ -77,7 +70,7 @@ tree = {
       "size": 0
     }
   ],
-  "size": 11304
+  "size": 11292
 }
 
 module.exports = tree;
