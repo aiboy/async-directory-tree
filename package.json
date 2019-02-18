@@ -1,29 +1,29 @@
 {
-  "name": "directory-tree",
-  "version": "2.2.1",
-  "description": "Convert a directory tree to a JS object.",
+  "name": "async-directory-tree",
+  "version": "2.3.1",
+  "description": "Convert a directory tree to a JS object asynchronously.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mihneadb/node-directory-tree"
+    "url": "https://github.com/aiboy/node-directory-tree"
   },
   "keywords": [
     "directory",
     "tree"
   ],
   "main": "lib/directory-tree.js",
-  "author": "Mihnea Dobrescu-Balaur",
+  "author": "Alexey Okhrimenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mihneadb/node-directory-tree/issues"
+    "url": "https://github.com/aiboy/node-directory-tree/issues"
   },
-  "homepage": "https://github.com/mihneadb/node-directory-tree",
+  "homepage": "https://github.com/aiboy/node-directory-tree",
   "dependencies": {},
   "devDependencies": {
     "chai": "^2.3.0",
     "mocha": "^5.2.0"
   },
   "engines": {
-    "node": ">=4.2"
+    "node": ">=10.15.1"
   },
   "scripts": {
     "test": "mocha"

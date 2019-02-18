@@ -1,19 +1,19 @@
-[![Build Status](https://travis-ci.org/mihneadb/node-directory-tree.svg)](https://travis-ci.org/mihneadb/node-directory-tree)
+# async-directory-tree
 
-# directory-tree
+> *fork of awesome https://github.com/mihneadb/node-directory-tree. Almost all of the work is done by Mihnea Dobrescu-Balaur*
 
 Creates a JavaScript object representing a directory tree.
 
 ## Install
 
 ```bash
-$ npm install directory-tree
+$ npm install async-directory-tree
 ```
 
 ## Usage
 
 ```js
-const dirTree = require("directory-tree");
+const dirTree = require("async-directory-tree");
 const tree = dirTree("/some/path");
 ```
 
@@ -21,14 +21,14 @@ And you can also filter by an extensions regex:
 This is useful for including only certain types of files.
 
 ```js
-const dirTree = require("directory-tree");
+const dirTree = require("async-directory-tree");
 const filteredTree = dirTree("/some/path", { extensions: /\.txt/ });
 ```
 
 Example for filtering multiple extensions with Regex.
 
 ```js
-const dirTree = require("directory-tree");
+const dirTree = require("async-directory-tree");
 const filteredTree = dirTree("/some/path", {
   extensions: /\.(md|js|html|java|py|rb)$/
 });
@@ -37,14 +37,14 @@ const filteredTree = dirTree("/some/path", {
 You can also exclude paths from the tree using a regex:
 
 ```js
-const dirTree = require("directory-tree");
+const dirTree = require("async-directory-tree");
 const filteredTree = dirTree("/some/path", { exclude: /some_path_to_exclude/ });
 ```
 
 You can also specify which additional attributes you would like to be included about each file/directory:
 
 ```js
-const dirTree = require('directory-tree');
+const dirTree = require('async-directory-tree');
 const filteredTree = dirTree('/some/path', {attributes:['mode', 'mtime']});
 ```
 
@@ -54,7 +54,7 @@ A callback function can be executed with each file that matches the extensions p
 
 ```js
 const PATH = require('path');
-const dirTree = require('directory-tree');
+const dirTree = require('async-directory-tree');
 
 const tree = dirTree('./test/test_data', {extensions:/\.txt$/}, (item, PATH, stats) => {
 	console.log(item);
@@ -66,7 +66,7 @@ The callback function takes the directory item (has path, name, size, and extens
 You can also pass a callback function for directories:
 ```js
 const PATH = require('path');
-const dirTree = require('directory-tree');
+const dirTree = require('async-directory-tree');
 
 const tree = dirTree('./test/test_data', {extensions:/\.txt$/}, null, (item, PATH, stats) => {
 	console.log(item);
@@ -98,7 +98,7 @@ photos
         └── snowboard.jpg
 ```
 
-`directory-tree` will return this JS object:
+`async-directory-tree` will return this JS object:
 
 ```json
 {
@@ -184,5 +184,4 @@ Make sure you have the dev dependencies installed (e.g. `npm install .`)
 
 ## Node version
 
-This project requires at least Node v4.2.
-Check out version `0.1.1` if you need support for older versions of Node.
+This project requires at least Node v10.x
