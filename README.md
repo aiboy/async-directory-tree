@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/aiboy/node-directory-tree.svg)](https://travis-ci.org/aiboy/node-directory-tree)
+
 # async-directory-tree
 
 > *fork of awesome https://github.com/mihneadb/node-directory-tree. Almost all of the work is done by Mihnea Dobrescu-Balaur*
