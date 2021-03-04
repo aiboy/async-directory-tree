@@ -19,7 +19,7 @@
   "homepage": "https://github.com/aiboy/node-directory-tree",
   "dependencies": {},
   "devDependencies": {
-    "chai": "^2.3.0",
+    "chai": "^4.3.3",
     "mocha": "^6.2.0"
   },
   "engines": {
