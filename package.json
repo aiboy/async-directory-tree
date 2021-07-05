@@ -20,7 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^2.3.0",
-    "mocha": "^6.2.0"
+    "mocha": "^9.0.2"
   },
   "engines": {
     "node": ">=10.15.1"
